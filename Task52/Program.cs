@@ -7,7 +7,7 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 int m = 5, n = 6;
-double[,] array = new double[m, n];                 //Зададим массив с рандомными числами
+int[,] array = new int[m, n];                 //Зададим массив с рандомными числами
 
 for (int i = 0; i < m; i++)                        
     for (int j = 0; j < n; j++)
@@ -19,7 +19,7 @@ for (int i = 0; i < m; i++)
 for (int i = 0; i < m; i++)                           //Выведеем массив в терминал
 {
     for (int j = 0; j < n; j++)
-        Console.Write(String.Format("{0,3}", array[i, j]));
+        Console.Write(String.Format("{0,4}", array[i, j]));
     Console.WriteLine();
 }
 
